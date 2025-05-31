@@ -1,0 +1,53 @@
+//
+// Global
+//
+
+body {
+    padding-top: $navbar-base-height;
+    color: $gray-800; // темнее, лучше читается
+    font-size: 0.9375rem; // ≈15px — стандарт в деловой типографике
+    line-height: 1.7; // комфортная читаемость
+    font-family: $font-family-base;
+}
+
+@include media-breakpoint-up(lg) {
+    body {
+        padding-top: 0;
+        padding-left: $sidebar-base-width;
+    }
+}
+
+// Заголовки — не капсом, без агрессии
+h1, h2, h3, h4, h5, h6 {
+    text-transform: none;
+    font-weight: 500;
+    line-height: 1.25;
+    color: $gray-900; // почти чёрный
+}
+
+h1 {
+    font-size: 2.2rem; // ≈35px
+}
+
+h2 {
+    font-size: 1.5rem; // ≈24px
+}
+
+h3 {
+    font-size: 1.125rem; // ≈18px
+}
+
+p.lead {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+    margin-bottom: 0.75rem;
+}
+
+.subheading {
+    font-family: $headings-font-family;
+    font-weight: 500;
+    font-size: 1.125rem; // ≈18px
+    margin-bottom: 0.5rem;
+    color: $gray-700;
+}
