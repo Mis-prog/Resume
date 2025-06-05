@@ -27,7 +27,6 @@ html(lang='en')
         // Navigation
         nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
             a.navbar-brand.js-scroll-trigger(href='#page-top')
-                span.d-block.d-lg-none Clarence Taylor
                 span.d-none.d-lg-block
                     img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg', alt='...')
             button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
@@ -54,12 +53,32 @@ html(lang='en')
                     h1.mb-0
                         | Акмурзин  
                         | Михаил
-                        | Эдуардович 
-                    .subheading.mb-5
+                    .subheading.mb-2
                         | г. Уфа, Россия · +7 (967) 735-5299 ·  
                         a(href='mailto:akmurzinmihail@gmail.com') akmurzinmihail@gmail.com
                     p.lead.mb-3
-                        | Занимаюсь задачами компьютерного зрения: калибровкой камер, устранением искажений и восстановлением геометрии сцены. Также имею практический опыт в математическом моделировании физических процессов и написании автотестов на Playwright.
+                        li
+                                span.fa-li
+                                    i.fas.fa-check
+                                | В настоящее время специализируюсь на задачах компьютерного зрения. Пишу выпускную квалификационную работу на тему калибровки камер в системах дорожного видеонаблюдения. 
+                        li
+                                span.fa-li
+                                    i.fas.fa-check
+                                | Имею практический опыт в разработке автотестов (UI и API) с использованием фреймворка Playwright. Писал тестовую документацию (чек-листы, тест-кейсы, отчёты о дефектах).
+                        li
+                                span.fa-li
+                                    i.fas.fa-check
+                                | Имею опыт в развертывании и настройке приложений на сервере с использованием панели управления Marzban (Xray, Telegram)
+                                
+                        li
+                                span.fa-li
+                                    i.fas.fa-check
+                                | Участвовал в хакатонах по продуктовой разработке, где решал задачи backend и ML-направления. Выступал в роли тимлида: распределял задачи в команде, занимался интеграцией модулей, отвечал за архитектуру решений и итоговую презентацию.
+                        li
+                                span.fa-li
+                                    i.fas.fa-check
+                                | Проявляю интерес к системам, в которых сочетаются точные математические модели, машинное обучение и практическая реализация. Легко осваиваю новые инструменты и технологии, умею анализировать чужой код, работаю с Git и системами сборки. 
+
                     .social-icons
                         a.social-icon(href='https://github.com/Mis-prog')
                             i.fab.fa-github
@@ -71,18 +90,17 @@ html(lang='en')
             // Experience
             section#experience.resume-section
                 .resume-section-content
-                    h2.mb-3 Опыт
+                    h2.mb-2 Опыт
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-3
                         .flex-grow-1
                             h3.mb-0 ООО «ВИКАД»
-                            .subheading.mb-3 Инженер по тестированию
+                            .subheading.mb-0 Инженер по тестированию
                             ul
-                                li Разработка и поддержка тестовой документации
-                                li Проведение функционального и интеграционного тестирования
-                                li Участие в анализе требований и написании тест-кейсов
-                                li Написание и проработка технических заданий, взаимодействие с заказчиком
-                                li Разработка автотестов с использованием Playwright
+                                li Разработал и поддерживал тестовую документацию
+                                li Проводил функциональное и интеграционное тестировании
+                                li Общался с заказчиком, проработывал требования, писал тех задания
+                                li Разработывал автотесты с использованием Playwright
                         .flex-shrink-0
                             span.text-primary Июнь 2024 — по настоящее время
 
@@ -91,52 +109,63 @@ html(lang='en')
             // Education
             section#education.resume-section
                 .resume-section-content
-                    h2.mb-3 Образование
+                    h2.mb-2 Образование
 
                     .d-flex.flex-column.flex-md-row.justify-content-between.mb-3
                         .flex-grow-1
                             h3.mb-0 Уфимский университет науки и технологий
-                            .subheading.mb-3 Бакалавр, направление: Прикладная математика
+                            .subheading.mb-0 Бакалавр, направление: Прикладная математика
                             p (бывш. УГАТУ — Уфимский государственный авиационный технический университет)
                         .flex-shrink-0
                             span.text-primary 2021 - 2025
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-3
+                        .flex-grow-1
+                            h3.mb-0 Онлайн-курс от Тинькофф
+                            .subheading.mb-0 Алгоритмы и структуры данных 
+                            p Проходил обучение по алгоритмам и структурам данных (графы, деревья, сортировки, поиск, оценки сложности). Не завершил курс из-за высокой учебной нагрузки, часть материалов освоил самостоятельно.
+                        .flex-shrink-0
+                            span.text-primary 2023
 
             hr.m-0
 
             // Skills
             section#skills.resume-section
                 .resume-section-content
-                    h2.mb-3 Навыки
+                    h2.mb-2 Навыки
 
                     .subheading.mb-2 Языки программирования и инструменты
                     ul.fa-ul
-                        li.mb-2
-                            span.fa-li
-                                i.fas.fa-check
-                            | Python — Numpy, Pandas, Matplotlib, Scikit-learn, Scipy, OpenCV, Playwright
-                        li.mb-2
-                            span.fa-li
-                                i.fas.fa-check
-                            | C++ — CMake, Boost, Eigen, OpenMP
-                        li.mb-2
-                            span.fa-li
-                                i.fas.fa-check
-                            | Git / GitHub / GitLab
-                        li.mb-2
-                            span.fa-li
-                                i.fas.fa-check
-                            | PostgreSQL
-                        li.mb-2
-                            span.fa-li
-                                i.fas.fa-check
-                            | Jira / Confluence
                         li
                             span.fa-li
                                 i.fas.fa-check
-                            | Word / Exsel
+                            | Python — Numpy, Pandas, Matplotlib, Scikit-learn, Scipy, OpenCV, Playwright
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | C++ — CMake, Boost, Eigen, OpenMP, Pybind11
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Linux — опыт работы с Ubuntu
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Git / GitHub / GitLab  — управление версиями, code review
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | PostgreSQL — базовые SQL-запросы, работа с таблицами и индексами
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Jira / Confluence — опыт командной разработки и ведения документации
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Word / Excel
                     .subheading.mb-2 Языки
                     ul.fa-ul
-                        li.mb-2
+                        li
                             span.fa-li
                                 i.fas.fa-check
                             | Русский — родной
@@ -144,6 +173,26 @@ html(lang='en')
                             span.fa-li
                                 i.fas.fa-check
                             | Английский — чтение технической документации
+                    .subheading.mb-2 Софт - скилы
+                    ul.fa-ul
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Высокая обучаемость и стремление к профессиональному росту
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Умение эффективно работать как в команде, так и самостоятельно
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Ответственность, внимание к деталям и соблюдение сроков
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Навыки коммуникации, аргументации и презентации технических решений
+                        
+
             hr.m-0
 
             // Awards
